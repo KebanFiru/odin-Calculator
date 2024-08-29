@@ -1,0 +1,25 @@
+.CalculatorBody{
+    border: 1px solid black;
+    width: 600px;
+    height: 800px;
+    margin-left: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.ResultBox{
+    margin: 10px;
+    height: 100px;
+     border: 1px solid black;
+     display: flex;
+     flex-direction: row;
+}
+.ResultText{
+    border: 1px solid black;
+    height: 100px;
+    width: 460px;
+}
+.ResultButton{
+    height: 100px;
+    width: 120px;
+}

@@ -1,6 +1,10 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 .CalculatorBody{
     border: 1px solid black;
-    width: 600px;
+    width: 550px;
     height: 800px;
     margin-left: 200px;
     margin-top: 50px;
@@ -9,17 +13,54 @@
 }
 .ResultBox{
     margin: 10px;
+    padding: 20px;
     height: 100px;
-     border: 1px solid black;
-     display: flex;
-     flex-direction: row;
+    /*border: 1px solid black; Remove from code */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 .ResultText{
     border: 1px solid black;
     height: 100px;
-    width: 460px;
+    width: 600px;
 }
-.ResultButton{
+.CalculationArea{
+    margin: 10px;
+    height: 800px;
+    /*border: 1px solid black; Remove from code */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Numbers{
+    /*border: 1px solid black; Remove from code */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    
+}
+.Operators{
+    padding: 10px;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+.FirstRow, .SecondRow, .ThirdRow{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+}
+.FourthRow{
+    margin-left: 5px;
+}
+button{
     height: 100px;
-    width: 120px;
+    width: 100px;
+}
+.ButtonZero{
+    height: 90px;
+    width: 340px;
 }

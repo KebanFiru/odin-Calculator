@@ -10,7 +10,7 @@
 <body>
     <div class="CalculatorBody">
         <div class = "ResultBox">
-            <div class="ResultText""></div>
+            <div id="ResultText"></div>
             <div>
                 <button class="ResultButton" >=</button>
             </div>
@@ -18,23 +18,22 @@
         <div class="CalculationArea">
             <div class="Numbers">
                 <div class="FirstRow">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
+                    <button class="NumberButton">1</button>
+                    <button class="NumberButton">2</button>
+                    <button class="NumberButton">3</button>
                 </div>
                 <div class="SecondRow">
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
+                    <button class="NumberButton">4</button>
+                    <button class="NumberButton">5</button>
+                    <button class="NumberButton">6</button>
                 </div>
                 <div class="ThirdRow">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    
+                    <button class="NumberButton">7</button>
+                    <button class="NumberButton">8</button>
+                    <button class="NumberButton">9</button>
                 </div>
                 <div class="FourthRow">
-                    <button class="ButtonZero">0</button>
+                    <button class="NumberButton" id="ButtonZero">0</button>
                 </div>
             </div>
             <div class="Operators">
@@ -44,7 +43,6 @@
                 <button class="OperatorButton">x</button>
                 <button class="OperatorButton">/</button>
             </div>
-            
         </div>
     </div>
 </body>

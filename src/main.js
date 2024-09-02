@@ -8,6 +8,13 @@ let isfirstnumberwrote = false;
 const buttons = document.querySelectorAll("button");
 const display = document.getElementById("ResultText");
 
+function operatorShortener(buton){
+    operator = true;
+    isfirstnumberwrote = true;
+    display.textContent = '';
+    display.textContent = buton.textContent;
+}
+
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     if(button.classList == "NumberButton"){
@@ -30,19 +37,22 @@ buttons.forEach((button) => {
         }
     }
     else if(button.classList == "OperatorButton"){
-        if(button.textContent == "Clear"){
-            display.textContent = '';
+        if (button.textContent != "=") {
+          operatorType = button.textContent;
         }
-        else if(button.textContent == "="){
-            console.log(firstNumber + secondNumber);
+        if (button.textContent == "Clear") {
+            display.textContent = '';
+        } 
+        else if (button.textContent == "=") {
+          switch (operatorType) {
+            case "+":
+                operatorShortener(button);
+                display.textContent = Number(firstNumber) + Number(secondNumber);
+              break;
+          }
         }
         else{
-            operator = true;
-            isfirstnumberwrote = true;
-            display.textContent = '';
-            display.textContent = button.textContent;
-
+            operatorShortener(button);
         }
-    }
-  });
+}});
 });

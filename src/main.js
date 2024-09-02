@@ -46,8 +46,20 @@ buttons.forEach((button) => {
         else if (button.textContent == "=") {
           switch (operatorType) {
             case "+":
-                operatorShortener(button);
-                display.textContent = Number(firstNumber) + Number(secondNumber);
+              operatorShortener(button);
+              display.textContent = Number(firstNumber) + Number(secondNumber);
+              break;
+            case "-":
+              operatorShortener(button);
+              display.textContent = Number(firstNumber) - Number(secondNumber);
+              break;
+            case "x":
+              operatorShortener(button);
+              display.textContent = Number(firstNumber) * Number(secondNumber);
+              break;
+            case "/":
+              operatorShortener(button);
+              display.textContent = Number(firstNumber) / Number(secondNumber);
               break;
           }
         }
